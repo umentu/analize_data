@@ -64,14 +64,12 @@ class Analize(object):
 
             fx = sp.linspace(0, x[-1], 1000)
             plt.plot(fx, f(fx), "r", linewidth=6)
-            plt.legend("d={0}".format(f.order), loc="upper left")
 
         plt.show()
 
 
 if __name__ == '__main__':
-    
-    analize = Analize()
-    (x, y) = analize.get_data_from_csv(DIRNAME + "/number_data.txt")
-    analize.show_graph(x, y)
 
+    analize = Analize()
+    (x, y) = analize.get_data_from_csv(DIRNAME + "/cpu.csv")
+    analize.show_graph(x, y)
