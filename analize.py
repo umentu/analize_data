@@ -71,5 +71,5 @@ class Analize(object):
 if __name__ == '__main__':
 
     analize = Analize()
-    (x, y) = analize.get_data_from_csv(DIRNAME + "/cpu.csv")
+    (x, y) = analize.get_data_from_csv(DIRNAME + "/number_data.txt")
     analize.show_graph(x, y)
